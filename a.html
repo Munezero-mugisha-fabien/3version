@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        table,tr,td,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        input{
+            border: none;
+            outline: none;
+        }
+        #table2{
+            margin-left: 457px;
+        }
+        #field{
+         margin-left: 300px;   
+        }
+    </style>
+</head>
+<body>
+ <fieldset id="field" style="width: 200px; background-color: skyblue;" >
+    <center><i>invoice for shopping</i></center><br>
+    <center>INVOICE</center><br>
+    <p><b>Invoice to:<br>
+    <input type="text" name="text" placeholder="Names">
+    </b>
+     </p><br>
+   <p style="text-align: right;"><b>No:</b><input type="text" placeholder="Number">
+   </p>
+<p style="text-align: right;"><b>Date:</b>
+<input type="date" name="date" placeholder="enter">
+   </p>
+   <fieldset style="width: 450px; background-color:greenyellow;">
+    <!--vue app-->
+    <div id="app">
+   <table style="width:45%" border="1">
+    <tr>
+        <th>PRODUCT</th>
+        <th>QUANTITY</th>
+        <th>PRICE</th>
+        <th>TOTAL</th>
+    </tr>
+        <tr>
+    <td><input type="text" placeholder="enter"></td>
+    <td><input type="text"  placeholder="enter" v-model="number1"></td>
+    <td><input type="text" placeholder="enter" v-model="number2"></td>
+    <td>{{total1}}</td>
+         </tr>
+    <tr>
+        <td><input type="text" placeholder="enter"></td>
+        <td><input type="text" placeholder="enter" v-model="number3"></td>
+        <td><input type="text" placeholder="enter" v-model="number4"></td>
+        <td>{{total2}}</td>
+    </tr>
+        <tr>
+            <td><input type="text" placeholder="enter"></td>
+            <td><input type="text" placeholder="enter" v-model="number5"></td>
+            <td><input type="text" placeholder="enter" v-model="number6"></td>
+            <td>{{total3}}</td>
+        </tr>
+   </table> <br><br>
+    <table style="width:23%" id="table2" align="center">
+        <tr>
+            <td style="width: 80px;"><button style="width: 87px;">Total</button></td>
+            <td style="width: 40px;">{{total4}}</td>
+        </tr>
+    </table>
+    </div>
+    </fieldset>
+     </fieldset>
+ <script>
+  var app=new Vue({
+    el:"#app",
+    data:{number1:"",
+          number2:"",
+          number3:"",
+          number4:"",
+          number5:"",
+          number6:""
+
+               },
+     computed:{
+      total1:function(){
+        return this.number1*1*this.number2*1
+      },
+      total2:function(){
+        return this.number3*1*this.number4*1
+      },
+      total3:function(){
+        return this.number5*1*this.number6*1
+      },
+total4:function(){
+  return this.total1+this.total2+this.total3
+}
+
+     }
+  })
+ </script>   
+</body>
+</html>

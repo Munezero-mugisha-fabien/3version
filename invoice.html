@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bussines</title>
+    <link rel="stylesheet" href="bussiness.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        table,tr,td,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        input{
+            border: none;
+            outline:none;
+            width: 300px;
+            height: 37px;
+        }
+        #table2{
+            margin-left: 740px;
+            width:40px ;
+            height:50px ;
+            
+        }
+        table{
+            width:100px ;
+            height:150px ;
+ 
+        }
+        #field{
+         margin-left: 150px;   
+        }
+    </style>
+</head>
+<body>
+    <header class="header1">
+        <nav class="navBar">
+            <h1>Logo</h1>
+            <ul class="listitemes">
+                <li><a href="bussiness.html">Home</a></li>
+                <li><a href="2nd.html">Calculation</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="aboutus">About Us</a></li>
+                <li><a href="#setting">Setting</a></li>
+             </ul>
+         </nav>
+       </header>
+       <br><br><br><br><br><br>
+       <fieldset id="field" style="width: 100px;height: 530px; background-color: skyblue;" >
+        <center><i>invoice for shopping</i></center><br>
+        <center>INVOICE</center><br>
+        <p><b>Invoice to:<br>
+        <input type="text" name="text" placeholder="Names">
+        </b>
+         </p><br>
+       <p style="text-align: right;"><b>No:</b><input type="text" placeholder="Number">
+       </p><br><br>
+    <p style="text-align: right;"><b>Date:</b>
+    <input type="date" name="date" placeholder="enter">
+       </p>
+       <fieldset style="width: 500px; background-color:greenyellow;">
+        <!--vue app-->
+        <div id="app">
+       <table style="width:45%" border="1">
+        <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+        </tr>
+            <tr>
+        <td><input type="text" placeholder="enter"></td>
+        <td><input type="text"  placeholder="enter" v-model="number1"></td>
+        <td><input type="text" placeholder="enter" v-model="number2"></td>
+        <td>{{total1}}</td>
+             </tr>
+        <tr>
+            <td><input type="text" placeholder="enter"></td>
+            <td><input type="text" placeholder="enter" v-model="number3"></td>
+            <td><input type="text" placeholder="enter" v-model="number4"></td>
+            <td>{{total2}}</td>
+        </tr>
+            <tr>
+                <td><input type="text" placeholder="enter"></td>
+                <td><input type="text" placeholder="enter" v-model="number5"></td>
+                <td><input type="text" placeholder="enter" v-model="number6"></td>
+                <td>{{total3}}</td>
+            </tr>
+       </table> <br><br>
+        <table style="width:23%" id="table2" align="center">
+            <tr>
+                <td style="width: 80px;"><button style="width: 158px; height: 80px;">Total</button></td>
+                <td style="width: 40px;">{{total4}}</td>
+            </tr>
+        </table>
+        </div>
+        </fieldset>
+         </fieldset>
+     <script>
+      var app=new Vue({
+        el:"#app",
+        data:{number1:"",
+              number2:"",
+              number3:"",
+              number4:"",
+              number5:"",
+              number6:""
+    
+                   },
+         computed:{
+          total1:function(){
+            return this.number1*1*this.number2*1
+          },
+          total2:function(){
+            return this.number3*1*this.number4*1
+          },
+          total3:function(){
+            return this.number5*1*this.number6*1
+          },
+    total4:function(){
+      return this.total1+this.total2+this.total3
+    }
+    
+         }
+      })
+     </script>   
+     <br><br><br><br><br><br>
+    <footer class="footercontainer">
+        <div class="email">
+            <h2><u>Information</u></h2>
+            <ul>
+                <li><label>Email</label>:Mugisha@gmail.com</li>
+                <li><label>contact:</label>0790723191</li>
+                <li><label>contact:</label>0781526628</li>
+            </ul>
+        </div>
+        
+        <div class="followus">
+            <h2><u>Follow Us</u></h2>
+            <ul>
+                <li>Twitter</li>
+                <li>Google</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2><u>Our Works</u></h2>
+            <ul>
+                <li>Export & Import</li>
+                <li>Transport product</li>
+                <li>Selling product</li>
+            </ul>
+        </div>
+        
+        <div class="address">
+            <h2><u>Our services</u></h2>
+            <ul>
+                <li>Purchasing product</li>
+                <li>Transport product</li>
+                <li>Selling product</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bussines</title>
+    <link rel="stylesheet" href="bussiness.css">
+    <link rel="stylesheet" href="buss.css">
+    <link rel="stylesheet" href="dec.css">
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+     
+    }
+    table{
+     padding: 300px;
+    }
+    
+    input{
+      outline: none;
+      border: none;
+    }
+    </style>
+ <script>
+    function goBack(){
+        window.history.back()
+        
+    }
+    function goForward(){
+            window.history.forward()
+        }
+ </script>
+</head>
+<body style="background-color: white;">
+  
+    <header class="header1">
+        <nav class="navBar">
+            <h1>Logo</h1>
+            <ul class="listitemes">
+                <li><a href="bussiness.html">Home</a></li>
+                <li><a href="12.html">Calculation</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#setting">Setting</a></li>
+             </ul>
+         </nav>
+       </header><br><br><br><br><br><br>
+        <div class="buttonstatic">
+       <button id="de" onclick="fabi()" class="datebutton">Date</button>
+       <button id="demo" onclick="fas()" class="printbutton">Print</button>
+       <button onclick="fa()" class="okbutton">Ok</button>
+       <button class="okbutton" style="background-color: bisque;"><a href="">New Sheet(11)</a></button>
+       <button onclick="goBack()" class="okbutton Back">Go back</button>
+       <button onclick="goForward()" class="okbutton forwd">Go forward</button>
+       <div class="arrowgoback">
+           
+       </div>
+       <div class="arrowgoforwd">
+     
+       </div>
+       </div>
+         <script>
+             function fabi(){document.getElementById("de").outerHTML=Date()
+       }
+       function fas(){document.getElementById("demo").innerHTML=window.print()
+       }
+        </script> <br><br><br><br>    
+       <center><h1>MANAGEMENT OF STOKE</center></h1>
+       <table style="width:85%">
+         <tr>
+         <th colspan="4"><h4>BUYING PRICE OF PRODUCT</h4></th> 
+         <th colspan="3"><h4>SELLING PRICE OF PRODUCT</h4></th>
+         <th colspan="2"><h4>PERFORMANCE OF BUSSINESS</h4></th>
+         <th><h4>STOKE</h4></th>
+       </tr>
+         <tr>
+           <th>PRODUCT NAME</th>
+           <th>1 QUANTITY (kg)</th>
+           <th>COST PRICE(frw)</th> 
+           <th>STOKE</th>
+           <th>MARKED PRICE(frw)</th>
+           <th>2 QUANTITY (kg)</th>
+           <th>TOTAL SELLING PRICE(frw)</th>
+           <th>%PROFIT</th>
+           <th>LOSS/PROFIT</th>
+           <th>REMAINS</th> 
+         </tr>
+         <tr><!--for function 0-->
+           <td><input id="a" placeholder="product name"></td>
+           <td><input id="b" placeholder="kg"></td>
+           <td><input id="c" placeholder="frw"></td>
+           <td><input id="j" placeholder="number"></td>
+           <td><input id="d" placeholder="frw"></td>
+           <td><input id="e" placeholder="kg" ></td>
+           <td id="f">frw</td>
+           <td id="g">%</td>
+           <td id="h">profit/loss</td>
+           <td id="i"></td>
+         </tr><!--for function 1-->
+         <tr>
+           <td><input id="a1" placeholder="product name"></td>
+           <td><input id="b1" placeholder="kg"></td>
+           <td><input id="c1" placeholder="frw"></td>
+           <td><input id="j1" placeholder="number"></td>
+           <td><input id="d1" placeholder="frw"></td>
+           <td><input id="e1" placeholder="kg" ></td>
+           <td id="f1">frw</td>
+           <td id="g1">%</td>
+           <td id="h1">profit/loss</td>
+           <td id="i1"></td>
+         </tr><!--for function 2 -->
+       
+         <tr>
+           <td><input id="a2" placeholder="product name"></td>
+           <td><input id="b2" placeholder="kg"></td>
+           <td><input id="c2" placeholder="frw"></td>
+           <td><input id="j2" placeholder="number"></td>
+           <td><input id="d2" placeholder="frw"></td>
+           <td><input id="e2" placeholder="kg" ></td>
+           <td id="f2">frw</td>
+           <td id="g2">%</td>
+           <td id="h2">profit/loss</td>
+           <td id="i2"></td>
+         </tr>
+         
+         <tr><!--for function 3-->
+           <td><input id="a3" placeholder="product name"></td>
+           <td><input id="b3" placeholder="kg"></td>
+           <td><input id="c3" placeholder="frw"></td>
+           <td><input id="j3" placeholder="number"></td>
+           <td><input id="d3" placeholder="frw"></td>
+           <td><input id="e3" placeholder="kg" ></td>
+           <td id="f3">frw</td>
+           <td id="g3">%</td>
+           <td id="h3">profit/loss</td>
+           <td id="i3"></td>
+         </tr>
+         <tr><!--for function 4-->
+           <td><input id="a4" placeholder="product name"></td>
+           <td><input id="b4" placeholder="kg"></td>
+           <td><input id="c4" placeholder="frw"></td>
+           <td><input id="j4" placeholder="number"></td>
+           <td><input id="d4" placeholder="frw"></td>
+           <td><input id="e4" placeholder="kg" ></td>
+           <td id="f4">frw</td>
+           <td id="g4">%</td>
+           <td id="h4">profit/loss</td>
+           <td id="i4"></td>
+         </tr>
+         <tr><!--for function 5-->
+           <td><input id="a5" placeholder="product name"></td>
+           <td><input id="b5" placeholder="kg"></td>
+           <td><input id="c5" placeholder="frw"></td>
+           <td><input id="j5" placeholder="number"></td>
+           <td><input id="d5" placeholder="frw"></td>
+           <td><input id="e5" placeholder="kg" ></td>
+           <td id="f5">frw</td>
+           <td id="g5">%</td>
+           <td id="h5">profit/loss</td>
+           <td id="i5"></td>
+         </tr>
+         <tr><!--for function 6-->
+           <td><input id="a6" placeholder="product name"></td>
+           <td><input id="b6" placeholder="kg"></td>
+           <td><input id="c6" placeholder="frw"></td>
+           <td><input id="j6" placeholder="number"></td>
+           <td><input id="d6" placeholder="frw"></td>
+           <td><input id="e6" placeholder="kg" ></td>
+           <td id="f6">frw</td>
+           <td id="g6">%</td>
+           <td id="h6">profit/loss</td>
+           <td id="i6"></td>
+         </tr>
+         <tr><!--for function 7-->
+           <td><input id="a7" placeholder="product name"></td>
+           <td><input id="b7" placeholder="kg"></td>
+           <td><input id="c7" placeholder="frw"></td>
+           <td><input id="j7" placeholder="number"></td>
+           <td><input id="d7" placeholder="frw"></td>
+           <td><input id="e7" placeholder="kg" ></td>
+           <td id="f7">frw</td>
+           <td id="g7">%</td>
+           <td id="h7">profit/loss</td>
+           <td id="i7"></td>
+         </tr>
+         <tr><!--for function 8-->
+           <td><input id="a8" placeholder="product name"></td>
+           <td><input id="b8" placeholder="kg"></td>
+           <td><input id="c8" placeholder="frw"></td>
+           <td><input id="j8" placeholder="number"></td>
+           <td><input id="d8" placeholder="frw"></td>
+           <td><input id="e8" placeholder="kg" ></td>
+           <td id="f8">frw</td>
+           <td id="g8">%</td>
+           <td id="h8">profit/loss</td>
+           <td id="i8"></td>
+         </tr>
+       
+         <tr><!--for function 9-->
+           <td><input id="a9" placeholder="product name"></td>
+           <td><input id="b9" placeholder="kg"></td>
+           <td><input id="c9" placeholder="frw"></td>
+           <td><input id="j9" placeholder="number"></td>
+           <td><input id="d9" placeholder="frw"></td>
+           <td><input id="e9" placeholder="kg" ></td>
+           <td id="f9">frw</td>
+           <td id="g9">%</td>
+           <td id="h9">profit/loss</td>
+           <td id="i9"></td>
+         </tr>
+         <tr><!--for function 10-->
+           <td><input id="a10" placeholder="product name"></td>
+           <td><input id="b10" placeholder="kg"></td>
+           <td><input id="c10" placeholder="frw"></td>
+           <td><input id="j10" placeholder="number"></td>
+           <td><input id="d10" placeholder="frw"></td>
+           <td><input id="e10" placeholder="kg" ></td>
+           <td id="f10">frw</td>
+           <td id="g10">%</td>
+           <td id="h10">profit/loss</td>
+           <td id="i10"></td>
+         </tr>
+         <tr><!--for function 11-->
+           <td><input id="a11" placeholder="product name"></td>
+           <td><input id="b11" placeholder="kg"></td>
+           <td><input id="c11" placeholder="frw"></td>
+           <td><input id="j11" placeholder="number"></td>
+           <td><input id="d11" placeholder="frw"></td>
+           <td><input id="e11" placeholder="kg" ></td>
+           <td id="f11">frw</td>
+           <td id="g11">%</td>
+           <td id="h11">profit/loss</td>
+           <td id="i11"></td>
+         </tr>
+         <tr><!--for function 12-->
+           <td><input id="a12" placeholder="product name"></td>
+           <td><input id="b12" placeholder="kg"></td>
+           <td><input id="c12" placeholder="frw"></td>
+           <td><input id="j12" placeholder="number"></td>
+           <td><input id="d12" placeholder="frw"></td>
+           <td><input id="e12" placeholder="kg" ></td>
+           <td id="f12">frw</td>
+           <td id="g12">%</td>
+           <td id="h12">profit/loss</td>
+           <td id="i12"></td>
+         </tr>
+           <tr><!--for function 13-->
+           <td><input id="a13" placeholder="product name"></td>
+           <td><input id="b13" placeholder="kg"></td>
+           <td><input id="c13" placeholder="frw"></td>
+           <td><input id="j13" placeholder="number"></td>
+           <td><input id="d13" placeholder="frw"></td>
+           <td><input id="e13" placeholder="kg" ></td>
+           <td id="f13">frw</td>
+           <td id="g13">%</td>
+           <td id="h13">profit/loss</td>
+           <td id="i13"></td>
+         </tr>
+         <tr><!--for function 14-->
+           <td><input id="a14" placeholder="product name"></td>
+           <td><input id="b14" placeholder="kg"></td>
+           <td><input id="c14" placeholder="frw"></td>
+           <td><input id="j14" placeholder="number"></td>
+           <td><input id="d14" placeholder="frw"></td>
+           <td><input id="e14" placeholder="kg" ></td>
+           <td id="f14">frw</td>
+           <td id="g14">%</td>
+           <td id="h14">profit/loss</td>
+           <td id="i14"></td>
+         </tr>
+         <tr><!--for function 15-->
+           <td><input id="a15" placeholder="product name"></td>
+           <td><input id="b15" placeholder="kg"></td>
+           <td><input id="c15" placeholder="frw"></td>
+           <td><input id="j15" placeholder="number"></td>
+           <td><input id="d15" placeholder="frw"></td>
+           <td><input id="e15" placeholder="kg" ></td>
+           <td id="f15">frw</td>
+           <td id="g15">%</td>
+           <td id="h15">profit/loss</td>
+           <td id="i15"></td>
+         </tr>
+         <tr><!--for function 16-->
+           <td><input id="a16" placeholder="product name"></td>
+           <td><input id="b16" placeholder="kg"></td>
+           <td><input id="c16" placeholder="frw"></td>
+           <td><input id="j16" placeholder="number"></td>
+           <td><input id="d16" placeholder="frw"></td>
+           <td><input id="e16" placeholder="kg" ></td>
+           <td id="f16">frw</td>
+           <td id="g16">%</td>
+           <td id="h16">profit/loss</td>
+           <td id="i16"></td>
+         </tr>
+         <tr><!--for function 17-->
+           <td><input id="a17" placeholder="product name"></td>
+           <td><input id="b17" placeholder="kg"></td>
+           <td><input id="c17" placeholder="frw"></td>
+           <td><input id="j17" placeholder="number"></td>
+           <td><input id="d17" placeholder="frw"></td>
+           <td><input id="e17" placeholder="kg" ></td>
+           <td id="f17">frw</td>
+           <td id="g17">%</td>
+           <td id="h17">profit/loss</td>
+           <td id="i17"></td>
+         </tr>
+         <tr><!--for function 18-->
+           <td><input id="a18" placeholder="product name"></td>
+           <td><input id="b18" placeholder="kg"></td>
+           <td><input id="c18" placeholder="frw"></td>
+           <td><input id="j18" placeholder="number"></td>
+           <td><input id="d18" placeholder="frw"></td>
+           <td><input id="e18" placeholder="kg" ></td>
+           <td id="f18">frw</td>
+           <td id="g18">%</td>
+           <td id="h18">profit/loss</td>
+           <td id="i18"></td>
+         </tr>
+         <tr><!--for function 19-->
+           <td><input id="a19" placeholder="product name"></td>
+           <td><input id="b19" placeholder="kg"></td>
+           <td><input id="c19" placeholder="frw"></td>
+           <td><input id="j19" placeholder="number"></td>
+           <td><input id="d19" placeholder="frw"></td>
+           <td><input id="e19" placeholder="kg" ></td>
+           <td id="f19">frw</td>
+           <td id="g19">%</td>
+           <td id="h19">profit/loss</td>
+           <td id="i19"></td>
+         </tr>
+         <tr><!--for function 20-->
+           <td><input id="a20" placeholder="product name"></td>
+           <td><input id="b20" placeholder="kg"></td>
+           <td><input id="c20" placeholder="frw"></td>
+           <td><input id="j20" placeholder="number"></td>
+           <td><input id="d20" placeholder="frw"></td>
+           <td><input id="e20" placeholder="kg" ></td>
+           <td id="f20">frw</td>
+           <td id="g20">%</td>
+           <td id="h20">profit/loss</td>
+           <td id="i20"></td>
+         </tr>
+         <tr><!--for function 21-->
+           <td><input id="a21" placeholder="product name"></td>
+           <td><input id="b21" placeholder="kg"></td>
+           <td><input id="c21" placeholder="frw"></td>
+           <td><input id="j21" placeholder="number"></td>
+           <td><input id="d21" placeholder="frw"></td>
+           <td><input id="e21" placeholder="kg" ></td>
+           <td id="f21">frw</td>
+           <td id="g21">%</td>
+           <td id="h21">profit/loss</td>
+           <td id="i21"></td>
+         </tr>
+         <tr><!--for function 22-->
+           <td><input id="22" placeholder="product name"></td>
+           <td><input id="b22" placeholder="kg"></td>
+           <td><input id="c22" placeholder="frw"></td>
+           <td><input id="j22" placeholder="number"></td>
+           <td><input id="d22" placeholder="frw"></td>
+           <td><input id="e22" placeholder="kg" ></td>
+           <td id="f22">frw</td>
+           <td id="g22">%</td>
+           <td id="h22">profit/loss</td>
+           <td id="i22"></td>
+         </tr>
+         <tr><!--for function 23-->
+           <td><input id="23" placeholder="product name"></td>
+           <td><input id="b23" placeholder="kg"></td>
+           <td><input id="c23" placeholder="frw"></td>
+           <td><input id="j23" placeholder="number"></td>
+           <td><input id="d23" placeholder="frw"></td>
+           <td><input id="e23" placeholder="kg" ></td>
+           <td id="f23">frw</td>
+           <td id="g23">%</td>
+           <td id="h23">profit/loss</td>
+           <td id="i23"></td>
+         </tr>
+         <tr><!--for function 24-->
+           <td><input id="a24" placeholder="product name"></td>
+           <td><input id="b24" placeholder="kg"></td>
+           <td><input id="c24" placeholder="frw"></td>
+           <td><input id="j24" placeholder="number"></td>
+           <td><input id="d24" placeholder="frw"></td>
+           <td><input id="e24" placeholder="kg" ></td>
+           <td id="f24">frw</td>
+           <td id="g24">%</td>
+           <td id="h24">profit/loss</td>
+           <td id="i24"></td>
+         </tr>
+         <tr><!--for function 25-->
+           <td><input id="a25" placeholder="product name"></td>
+           <td><input id="b25" placeholder="kg"></td>
+           <td><input id="c25" placeholder="frw"></td>
+           <td><input id="j25" placeholder="number"></td>
+           <td><input id="d25" placeholder="frw"></td>
+           <td><input id="e25" placeholder="kg" ></td>
+           <td id="f25">frw</td>
+           <td id="g25">%</td>
+           <td id="h25">profit/loss</td>
+           <td id="i25"></td>
+         </tr>
+         <tr><!--for function 26-->
+           <td><input id="a26" placeholder="product name"></td>
+           <td><input id="b26" placeholder="kg"></td>
+           <td><input id="c26" placeholder="frw"></td>
+           <td><input id="j26" placeholder="number"></td>
+           <td><input id="d26" placeholder="frw"></td>
+           <td><input id="e26" placeholder="kg" ></td>
+           <td id="f26">frw</td>
+           <td id="g26">%</td>
+           <td id="h26">profit/loss</td>
+          <td id="i26"></td>
+         </tr>
+         <tr><!--for function 27-->
+           <td><input id="a27" placeholder="product name"></td>
+           <td><input id="b27" placeholder="kg"></td>
+           <td><input id="c27" placeholder="frw"></td>
+           <td><input id="j27" placeholder="number"></td>
+           <td><input id="d27" placeholder="frw"></td>
+           <td><input id="e27" placeholder="kg" ></td>
+           <td id="f27">frw</td>
+           <td id="g27">%</td>
+           <td id="h27">profit/loss</td>
+           <td id="i27"></td>
+         </tr>
+         <tr><!--for function 28-->
+           <td><input id="a28" placeholder="product name"></td>
+           <td><input id="b28" placeholder="kg"></td>
+           <td><input id="c28" placeholder="frw"></td>
+           <td><input id="j28" placeholder="number"></td>
+           <td><input id="d28" placeholder="frw"></td>
+           <td><input id="e28" placeholder="kg" ></td>
+           <td id="f28">frw</td>
+           <td id="g28">%</td>
+           <td id="h28">profit/loss</td>
+           <td id="i28"></td>
+         </tr>
+         <tr><!--for function 29-->
+           <td><input id="a29" placeholder="product name"></td>
+           <td><input id="b29" placeholder="kg"></td>
+           <td><input id="c29" placeholder="frw"></td>
+           <td><input id="j29" placeholder="number"></td>
+           <td><input id="d29" placeholder="frw"></td>
+           <td><input id="e29" placeholder="kg" ></td>
+           <td id="f29">frw</td>
+           <td id="g29">%</td>
+           <td id="h29">profit/loss</td>
+           <td id="i29"></td>
+         </tr>
+         <tr><!--for function 30-->
+           <td><input id="a30" placeholder="product name"></td>
+           <td><input id="b30" placeholder="kg"></td>
+           <td><input id="c30" placeholder="frw"></td>
+           <td><input id="j30" placeholder="number"></td>
+           <td><input id="d30" placeholder="frw"></td>
+           <td><input id="e30" placeholder="kg" ></td>
+           <td id="f30">frw</td>
+           <td id="g30">%</td>
+           <td id="h30">profit/loss</td>
+           <td id="i30"></td>
+         </tr>
+         <tr><!--for function 31-->
+           <td><input id="a31" placeholder="product name"></td>
+           <td><input id="b31" placeholder="kg"></td>
+           <td><input id="c31" placeholder="frw"></td>
+           <td><input id="j31" placeholder="number"></td>
+           <td><input id="d31" placeholder="frw"></td>
+           <td><input id="e31" placeholder="kg" ></td>
+           <td id="f31">frw</td>
+           <td id="g31">%</td>
+           <td id="h31">profit/loss</td>
+           <td id="i31"></td>
+         </tr>
+         <tr><!--for function 32-->
+           <td><input id="a32" placeholder="product name"></td>
+           <td><input id="b32" placeholder="kg"></td>
+           <td><input id="c32" placeholder="frw"></td>
+           <td><input id="j32" placeholder="number"></td>
+           <td><input id="d32" placeholder="frw"></td>
+           <td><input id="e32" placeholder="kg" ></td>
+           <td id="f32">frw</td>
+           <td id="g32">%</td>
+           <td id="h32">profit/loss</td>
+           <td id="i32"></td>
+         </tr>
+         <tr><!--for function 33-->
+           <td><input id="a33" placeholder="product name"></td>
+           <td><input id="b33" placeholder="kg"></td>
+           <td><input id="c33" placeholder="frw"></td>
+           <td><input id="j33" placeholder="number"></td>
+           <td><input id="d33" placeholder="frw"></td>
+           <td><input id="e33" placeholder="kg" ></td>
+           <td id="f33">frw</td>
+           <td id="g33">%</td>
+           <td id="h33">profit/loss</td>
+           <td id="i33"></td>
+         </tr>
+         <tr><!--for function 34-->
+           <td><input id="a34" placeholder="product name"></td>
+           <td><input id="b34" placeholder="kg"></td>
+           <td><input id="c34" placeholder="frw"></td>
+           <td><input id="j34" placeholder="number"></td>
+           <td><input id="d34" placeholder="frw"></td>
+           <td><input id="e34" placeholder="kg" ></td>
+           <td id="f34">frw</td>
+           <td id="g34">%</td>
+           <td id="h34">profit/loss</td>
+           <td id="i34"></td>
+         </tr>
+         <tr><!--for function 35-->
+           <td><input id="a35" placeholder="product name"></td>
+           <td><input id="b35" placeholder="kg"></td>
+           <td><input id="c35" placeholder="frw"></td>
+           <td><input id="j35" placeholder="number"></td>
+           <td><input id="d35" placeholder="frw"></td>
+           <td><input id="e35" placeholder="kg" ></td>
+           <td id="f35">frw</td>
+           <td id="g35">%</td>
+           <td id="h35">profit/loss</td>
+           <td id="i35"></td>
+         </tr>
+         <tr><!--for function 36-->
+           <td><input id="a36" placeholder="product name"></td>
+           <td><input id="b36" placeholder="kg"></td>
+           <td><input id="c36" placeholder="frw"></td>
+           <td><input id="j36" placeholder="number"></td>
+           <td><input id="d36" placeholder="frw"></td>
+           <td><input id="e36" placeholder="kg" ></td>
+           <td id="f36">frw</td>
+           <td id="g36">%</td>
+           <td id="h36">profit/loss</td>
+           <td id="i36"></td>
+         </tr>
+         <tr><!--for function 37-->
+           <td><input id="a37" placeholder="product name"></td>
+           <td><input id="b37" placeholder="kg"></td>
+           <td><input id="c37" placeholder="frw"></td>
+           <td><input id="j37" placeholder="number"></td>
+           <td><input id="d37" placeholder="frw"></td>
+           <td><input id="e37" placeholder="kg" ></td>
+           <td id="f37">frw</td>
+           <td id="g37">%</td>
+           <td id="h37">profit/loss</td>
+           <td id="i37"></td>
+         </tr>
+         <tr><!--for function 38-->
+           <td><input id="a38" placeholder="product name"></td>
+           <td><input id="b38" placeholder="kg"></td>
+           <td><input id="c38" placeholder="frw"></td>
+           <td><input id="j38" placeholder="number"></td>
+           <td><input id="d38" placeholder="frw"></td>
+           <td><input id="e38" placeholder="kg" ></td>
+           <td id="f38">frw</td>
+           <td id="g38">%</td>
+           <td id="h38">profit/loss</td>
+           <td id="i38"></td>
+         </tr>
+         <tr><!--for function 39-->
+           <td><input id="a39" placeholder="product name"></td>
+           <td><input id="b39" placeholder="kg"></td>
+           <td><input id="c39" placeholder="frw"></td>
+           <td><input id="j39" placeholder="number"></td>
+           <td><input id="d39" placeholder="frw"></td>
+           <td><input id="e39" placeholder="kg" ></td>
+           <td id="f39">frw</td>
+           <td id="g39">%</td>
+           <td id="h39">profit/loss</td>
+           <td id="i39"></td>
+         </tr>
+         <tr><!--for function40 -->
+           <td><input id="a40" placeholder="product name"></td>
+           <td><input id="b40" placeholder="kg"></td>
+           <td><input id="c40" placeholder="frw"></td>
+           <td><input id="j40" placeholder="number"></td>
+           <td><input id="d40" placeholder="frw"></td>
+           <td><input id="e40" placeholder="kg" ></td>
+           <td id="f40">frw</td>
+           <td id="g40">%</td>
+           <td id="h40">profit/loss</td>
+           <td id="i40"></td>
+         </tr>
+         <!--for function41 -->
+         <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td id="f41">Total:</td>
+           <td></td>
+           <td></td>
+           <td></td> 
+         </tr>
+       </table>
+       <script type="text/javascript">
+         //function 0
+         function fa(){
+       let q1=document.getElementById('b').value;
+       let bpt=document.getElementById('c').value;
+       let sp1=document.getElementById('d').value;
+       let q2=document.getElementById('e').value;
+       let stoke=document.getElementById('j').value;
+       bp=bpt/q1;
+       spt=sp1*q2;
+       profit=(sp1-bp)/bp*100;
+       stoke=(stoke*1-q2);
+       document.getElementById("i").innerHTML=stoke;
+       document.getElementById("f").innerHTML=spt+"frw";
+       document.getElementById("g").innerHTML=profit.toFixed(2)+"%";
+       if(profit>0){
+         document.getElementById("h").innerHTML="profit"; 
+       }
+       else if(profit==0){
+         document.getElementById("h").innerHTML="no loss/profit";
+       }
+       
+       else if(profit<0){
+        document.getElementById("h").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h").innerHTML="no thing"; 
+       
+       }
+       
+       //function 1
+       
+       let q11=document.getElementById('b1').value;
+       let bpt1=document.getElementById('c1').value;
+       let sp11=document.getElementById('d1').value;
+       let q21=document.getElementById('e1').value;
+       let stoke1=document.getElementById('j1').value;
+       bp11=bpt1/q11;
+       spt1=sp11*q21;
+       profit1=(sp11-bp11)/bp11*100;
+       stoke1=(stoke1*1-q21);
+       document.getElementById("i1").innerHTML=stoke1;
+       document.getElementById("f1").innerHTML=spt1+"frw";
+       document.getElementById("g1").innerHTML=profit1.toFixed(2)+"%";
+       if(profit1>0){
+         document.getElementById("h1").innerHTML="profit"; 
+       }
+        else if(profit1==0){
+         document.getElementById("h1").innerHTML="no loss/profit";
+       }
+       else if(profit1<0){
+        document.getElementById("h1").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h1").innerHTML="no thing"; 
+       
+       }
+       //function 2
+       
+       let q12=document.getElementById('b2').value;
+       let bpt12=document.getElementById('c2').value;
+       let sp12=document.getElementById('d2').value;
+       let q22=document.getElementById('e2').value;
+       let stoke2=document.getElementById('j2').value;
+       bp12=bpt12/q12;
+       spt12=sp12*q22;
+       profit12=(sp12-bp12)/bp12*100;
+       stoke2=(stoke2*1-q22);
+       document.getElementById("i2").innerHTML=stoke2;
+       document.getElementById("f2").innerHTML=spt12+"frw";
+       document.getElementById("g2").innerHTML=profit12.toFixed(2)+"%";
+       if(profit12>0){
+         document.getElementById("h2").innerHTML="profit"; 
+       }
+       else if(profit12==0){
+         document.getElementById("h2").innerHTML="no loss/profit";
+       }
+       else if(profit12<0){
+        document.getElementById("h2").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h2").innerHTML="no thing"; 
+       
+       }
+       
+       //function 3
+       let q13=document.getElementById('b3').value;
+       let bpt13=document.getElementById('c3').value;
+       let sp13=document.getElementById('d3').value;
+       let q23=document.getElementById('e3').value;
+       let stoke3=document.getElementById('j3').value;
+       bp13=bpt13/q13;
+       spt13=sp13*q23;
+       profit13=(sp13-bp13)/bp13*100;
+       stoke3=(stoke3*1-q23);
+       document.getElementById("i3").innerHTML=stoke3;
+       document.getElementById("f3").innerHTML=spt13+"frw";
+       document.getElementById("g3").innerHTML=profit13.toFixed(2)+"%";
+       if(profit13>0){
+         document.getElementById("h3").innerHTML="profit"; 
+       }
+       else if(profit13<0){
+        document.getElementById("h3").innerHTML="loss"; 
+       
+       }
+       else if(profit13==0){
+         document.getElementById("h3").innerHTML="no loss/profit";
+       }
+       
+       else{
+        document.getElementById("h3").innerHTML="no thing"; 
+       
+       }
+       //function 4
+       
+       let q14=document.getElementById('b4').value;
+       let bpt14=document.getElementById('c4').value;
+       let sp14=document.getElementById('d4').value;
+       let q24=document.getElementById('e4').value;
+       let stoke4=document.getElementById('j4').value;
+       bp14=bpt14/q14;
+       spt14=sp14*q24;
+       profit14=(sp14-bp14)/bp14*100;
+       stoke4=(stoke4*1-q24);
+       document.getElementById("i4").innerHTML=stoke4;
+       document.getElementById("f4").innerHTML=spt14+"frw";
+       document.getElementById("g4").innerHTML=profit14.toFixed(2)+"%";
+       if(profit14>0){
+         document.getElementById("h4").innerHTML="profit"; 
+       }
+       else if(profit14<0){
+        document.getElementById("h4").innerHTML="loss"; 
+       
+       }
+       else if(profit14==0){
+         document.getElementById("h4").innerHTML="no loss/profit";
+       }
+       
+       else{
+        document.getElementById("h4").innerHTML="no thing"; 
+       
+       }
+       //function 5
+       
+       let q15=document.getElementById('b5').value;
+       let bpt15=document.getElementById('c5').value;
+       let sp15=document.getElementById('d5').value;
+       let q25=document.getElementById('e5').value;
+       let stoke5=document.getElementById('j5').value;
+       bp15=bpt15/q15;
+       spt15=sp15*q25;
+       profit15=(sp15-bp15)/bp15*100;
+       stoke5=(stoke5*1-q25);
+       document.getElementById("i5").innerHTML=stoke5;
+       document.getElementById("f5").innerHTML=spt15+"frw";
+       document.getElementById("g5").innerHTML=profit15.toFixed(2)+"%";
+       if(profit15>0){
+         document.getElementById("h5").innerHTML="profit"; 
+       }
+       else if(profit15==0){
+         document.getElementById("h5").innerHTML="no loss/profit";
+       }
+       else if(profit15<0){
+        document.getElementById("h5").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h5").innerHTML="no thing"; 
+       
+       }
+       //function 6
+       
+       let q16=document.getElementById('b6').value;
+       let bpt16=document.getElementById('c6').value;
+       let sp16=document.getElementById('d6').value;
+       let q26=document.getElementById('e6').value;
+       let stoke6=document.getElementById('j6').value;
+       bp16=bpt16/q16;
+       spt16=sp16*q26;
+       profit16=(sp16-bp16)/bp16*100;
+       stoke6=(stoke6*1-q26);
+       document.getElementById("i6").innerHTML=stoke6;
+       document.getElementById("f6").innerHTML=spt16+"frw";
+       document.getElementById("g6").innerHTML=profit16.toFixed(2)+"%";
+       if(profit16>0){
+         document.getElementById("h6").innerHTML="profit"; 
+       }
+       else if(profit16==0){
+         document.getElementById("h6").innerHTML="no loss/profit";
+       }
+       else if(profit16<0){
+        document.getElementById("h6").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h6").innerHTML="no thing"; 
+       
+       }
+       //function 7
+       
+       let q17=document.getElementById('b7').value;
+       let bpt17=document.getElementById('c7').value;
+       let sp17=document.getElementById('d7').value;
+       let q27=document.getElementById('e7').value;
+       let stoke7=document.getElementById('j7').value;
+       bp17=bpt17/q17;
+       spt17=sp17*q27;
+       profit17=(sp17-bp17)/bp17*100;
+       stoke7=(stoke7*1-q27);
+       document.getElementById("i7").innerHTML=stoke7;
+       document.getElementById("f7").innerHTML=spt17+"frw";
+       document.getElementById("g7").innerHTML=profit17.toFixed(2)+"%";
+       if(profit17>0){
+         document.getElementById("h7").innerHTML="profit"; 
+       }
+       else if(profit17==0){
+         document.getElementById("h7").innerHTML="no loss/profit";
+       }
+       else if(profit17<0){
+        document.getElementById("h7").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h7").innerHTML="no thing"; 
+       
+       }
+       //function 8
+       
+       let q18=document.getElementById('b8').value;
+       let bpt100=document.getElementById('c8').value;
+       let sp18=document.getElementById('d8').value;
+       let q28=document.getElementById('e8').value;
+       let stoke8=document.getElementById('j8').value;
+       bp18=bpt100/q18;
+       spt18=sp18*q28;
+       profit18=(sp18-bp18)/bp18*100;
+       stoke8=(stoke8*1-q28);
+       document.getElementById("i8").innerHTML=stoke8;
+       document.getElementById("f8").innerHTML=spt18+"frw";
+       document.getElementById("g8").innerHTML=profit18.toFixed(2)+"%";
+       if(profit18>0){
+         document.getElementById("h8").innerHTML="profit"; 
+       }
+       else if(profit18==0){
+         document.getElementById("h8").innerHTML="no loss/profit";
+       }
+       else if(profit18<0){
+        document.getElementById("h8").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h8").innerHTML="no thing"; 
+       
+       }
+       //function 9
+       
+       let q19=document.getElementById('b9').value;
+       let bpt99=document.getElementById('c9').value;
+       let sp19=document.getElementById('d9').value;
+       let q29=document.getElementById('e9').value;
+       let stoke9=document.getElementById('j9').value;
+       bp19=bpt99/q19;
+       spt19=sp19*q29;
+       profit19=(sp19-bp19)/bp19*100;
+       stoke9=(stoke9*1-q29);
+       document.getElementById("i9").innerHTML=stoke9;
+       document.getElementById("f9").innerHTML=spt19+"frw";
+       document.getElementById("g9").innerHTML=profit19.toFixed(2)+"%";
+       if(profit19>0){
+         document.getElementById("h9").innerHTML="profit"; 
+       }
+       else if(profit19==0){
+         document.getElementById("h9").innerHTML="no loss/profit";
+       }
+       else if(profit19<0){
+        document.getElementById("h9").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h9").innerHTML="no thing"; 
+       
+       }
+       //function 10
+       
+       let q10=document.getElementById('b10').value;
+       let bpt10=document.getElementById('c10').value;
+       let sp10=document.getElementById('d10').value;
+       let q20=document.getElementById('e10').value;
+       let stoke10=document.getElementById('j10').value;
+       bp10=bpt10/q10;
+       spt10=sp10*q20;
+       profit10=(sp10-bp10)/bp10*100;
+       stoke10=(stoke10*1-q20);
+       document.getElementById("i10").innerHTML=stoke10;
+       document.getElementById("f10").innerHTML=spt10+"frw";
+       document.getElementById("g10").innerHTML=profit10.toFixed(2)+"%";
+       if(profit10>0){
+         document.getElementById("h10").innerHTML="profit"; 
+       }
+       else if(profit10==0){
+         document.getElementById("h10").innerHTML="no loss/profit";
+       }
+       else if(profit10<0){
+        document.getElementById("h10").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h10").innerHTML="no thing"; 
+       
+       }
+       //function 11
+       
+       let q111=document.getElementById('b11').value;
+       let bpt111=document.getElementById('c11').value;
+       let sp111=document.getElementById('d11').value;
+       let q211=document.getElementById('e11').value;
+       let stoke11=document.getElementById('j11').value;
+       bp111=bpt111/q111;
+       spt111=sp111*q211;
+       profit111=(sp111-bp111)/bp111*100;
+       stoke11=(stoke11*1-q211);
+       document.getElementById("i11").innerHTML=stoke11;
+       document.getElementById("f11").innerHTML=spt111+"frw";
+       document.getElementById("g11").innerHTML=profit111.toFixed(2)+"%";
+       if(profit111>0){
+         document.getElementById("h11").innerHTML="profit"; 
+       }
+       else if(profit111==0){
+         document.getElementById("h11").innerHTML="no loss/profit";
+       }
+       else if(profit111<0){
+        document.getElementById("h11").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h11").innerHTML="no thing"; 
+       
+       }
+       //function 12
+       let q112=document.getElementById('b12').value;
+       let bpt222=document.getElementById('c12').value;
+       let sp80=document.getElementById('d12').value;
+       let q260=document.getElementById('e12').value;
+       let stoke12=document.getElementById('j12').value;
+       bp112=bpt222/q112;
+       spt122=sp80*q260;
+       profit122=(sp80-bp112)/bp112*100;
+       stoke12=(stoke12*1-q260);
+       document.getElementById("i12").innerHTML=stoke12;
+       document.getElementById("f12").innerHTML=spt122+"frw";
+       document.getElementById("g12").innerHTML=profit122.toFixed(2)+"%";
+       if(profit122>0){
+         document.getElementById("h12").innerHTML="profit"; 
+       }
+       else if(profit122==0){
+         document.getElementById("h12").innerHTML="no loss/profit";
+       }
+       else if(profit122<0){
+        document.getElementById("h12").innerHTML="loss"; 
+       
+       }
+       
+       else{
+        document.getElementById("h12").innerHTML="no thing"; 
+       
+       }
+       //function 13 starting point
+       
+       let q113=document.getElementById('b13').value;
+       let bpt103=document.getElementById('c13').value;
+       let sp113=document.getElementById('d13').value;
+       let q213=document.getElementById('e13').value;
+       let stoke13=document.getElementById('j13').value;
+       bp113=bpt103/q113;
+       spt13=sp113*q213;
+       profit13=(sp113-bp113)/bp113*100;
+       stoke13=(stoke13*1-q213);
+       document.getElementById("i13").innerHTML=stoke13;
+       document.getElementById("f13").innerHTML=spt13+"frw";
+       document.getElementById("g13").innerHTML=profit13.toFixed(2)+"%";
+       if(profit13>0){
+         document.getElementById("h13").innerHTML="profit"; 
+       }
+       else if(profit13==0){
+         document.getElementById("h13").innerHTML="no loss/profit";
+       }
+       
+       else if(profit13<0){
+        document.getElementById("h13").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h13").innerHTML="no thing"; 
+       
+       }//function14
+       
+       let q114=document.getElementById('b14').value;
+       let bpt104=document.getElementById('c14').value;
+       let sp114=document.getElementById('d14').value;
+       let q214=document.getElementById('e14').value;
+       let stoke14=document.getElementById('j14').value;
+       bp114=bpt104/q114;
+       spt14=sp114*q214;
+       profit14=(sp114-bp114)/bp114*100;
+       stoke14=(stoke14*1-q214);
+       document.getElementById("i14").innerHTML=stoke14;
+       document.getElementById("f14").innerHTML=spt14+"frw";
+       document.getElementById("g14").innerHTML=profit14.toFixed(2)+"%";
+       if(profit14>0){
+         document.getElementById("h14").innerHTML="profit"; 
+       }
+       else if(profit14==0){
+         document.getElementById("h14").innerHTML="no loss/profit";
+       }
+       
+       else if(profit14<0){
+        document.getElementById("h14").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h14").innerHTML="no thing"; 
+       
+       }//function15
+       
+       let q115=document.getElementById('b15').value;
+       let bpt105=document.getElementById('c15').value;
+       let sp115=document.getElementById('d15').value;
+       let q215=document.getElementById('e15').value;
+       let stoke15=document.getElementById('j15').value;
+       bp115=bpt105/q115;
+       spt15=sp115*q215;
+       profit15=(sp115-bp115)/bp115*100;
+       stoke15=(stoke15*1-q215);
+       document.getElementById("i15").innerHTML=stoke15;
+       document.getElementById("f15").innerHTML=spt15+"frw";
+       document.getElementById("g15").innerHTML=profit15.toFixed(2)+"%";
+       if(profit15>0){
+         document.getElementById("h15").innerHTML="profit"; 
+       }
+       else if(profit15==0){
+         document.getElementById("h15").innerHTML="no loss/profit";
+       }
+       
+       else if(profit15<0){
+        document.getElementById("h15").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h15").innerHTML="no thing"; 
+       
+       }//function16
+       let q116=document.getElementById('b16').value;
+       let bpt106=document.getElementById('c16').value;
+       let sp116=document.getElementById('d16').value;
+       let q216=document.getElementById('e16').value;
+       let stoke16=document.getElementById('j16').value;
+       bp116=bpt106/q116;
+       spt16=sp116*q216;
+       profit16=(sp116-bp116)/bp116*100;
+       stoke16=(stoke16*1-q216);
+       document.getElementById("i16").innerHTML=stoke16;
+       document.getElementById("f16").innerHTML=spt16+"frw";
+       document.getElementById("g16").innerHTML=profit16.toFixed(2)+"%";
+       if(profit16>0){
+         document.getElementById("h16").innerHTML="profit"; 
+       }
+       else if(profit16==0){
+         document.getElementById("h16").innerHTML="no loss/profit";
+       }
+       
+       else if(profit16<0){
+        document.getElementById("h16").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h16").innerHTML="no thing"; 
+       
+       }//function17
+       
+       let q117=document.getElementById('b17').value;
+       let bpt107=document.getElementById('c17').value;
+       let sp117=document.getElementById('d17').value;
+       let q217=document.getElementById('e17').value;
+       let stoke17=document.getElementById('j17').value;
+       bp117=bpt107/q117;
+       spt17=sp117*q217;
+       profit17=(sp117-bp117)/bp117*100;
+       stoke17=(stoke17*1-q217);
+       document.getElementById("i17").innerHTML=stoke17;
+       document.getElementById("f17").innerHTML=spt17+"frw";
+       document.getElementById("g17").innerHTML=profit17.toFixed(2)+"%";
+       if(profit17>0){
+         document.getElementById("h17").innerHTML="profit"; 
+       }
+       else if(profit17==0){
+         document.getElementById("h17").innerHTML="no loss/profit";
+       }
+       
+       else if(profit17<0){
+        document.getElementById("h17").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h17").innerHTML="no thing"; 
+       
+       }//function18
+       
+       let q118=document.getElementById('b18').value;
+       let bpt18=document.getElementById('c18').value;
+       let sp118=document.getElementById('d18').value;
+       let q218=document.getElementById('e18').value;
+       let stoke18=document.getElementById('j18').value;
+       bp118=bpt18/q118;
+       spt18=sp118*q218;
+       profit18=(sp118-bp118)/bp118*100;
+       stoke18=(stoke18*1-q218);
+       document.getElementById("i18").innerHTML=stoke18;
+       document.getElementById("f18").innerHTML=spt18+"frw";
+       document.getElementById("g18").innerHTML=profit18.toFixed(2)+"%";
+       if(profit18>0){
+         document.getElementById("h18").innerHTML="profit"; 
+       }
+       else if(profit18==0){
+         document.getElementById("h18").innerHTML="no loss/profit";
+       }
+       
+       else if(profit18<0){
+        document.getElementById("h18").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h18").innerHTML="no thing"; 
+       
+       }//function19
+       
+       let q119=document.getElementById('b19').value;
+       let bpt19=document.getElementById('c19').value;
+       let sp119=document.getElementById('d19').value;
+       let q219=document.getElementById('e19').value;
+       let stoke19=document.getElementById('j19').value;
+       bp119=bpt19/q119;
+       spt19=sp119*q219;
+       profit19=(sp119-bp119)/bp119*100;
+       stoke19=(stoke19*1-q219);
+       document.getElementById("i19").innerHTML=stoke19;
+       document.getElementById("f19").innerHTML=spt19+"frw";
+       document.getElementById("g19").innerHTML=profit19.toFixed(2)+"%";
+       if(profit19>0){
+         document.getElementById("h19").innerHTML="profit"; 
+       }
+       else if(profit19==0){
+         document.getElementById("h19").innerHTML="no loss/profit";
+       }
+       
+       else if(profit19<0){
+        document.getElementById("h19").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h19").innerHTML="no thing"; 
+       
+       }//function20
+       
+       let q120=document.getElementById('b20').value;
+       let bpt20=document.getElementById('c20').value;
+       let sp120=document.getElementById('d20').value;
+       let q220=document.getElementById('e20').value;
+       let stoke20=document.getElementById('j20').value;
+       bp120=bpt20/q120;
+       spt20=sp120*q220;
+       profit20=(sp120-bp120)/bp120*100;
+       stoke20=(stoke20*1-q220);
+       document.getElementById("i20").innerHTML=stoke20;
+       document.getElementById("f20").innerHTML=spt20+"frw";
+       document.getElementById("g20").innerHTML=profit20.toFixed(2)+"%";
+       if(profit20>0){
+         document.getElementById("h20").innerHTML="profit"; 
+       }
+       else if(profit20==0){
+         document.getElementById("h20").innerHTML="no loss/profit";
+       }
+       
+       else if(profit20<0){
+        document.getElementById("h20").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h20").innerHTML="no thing"; 
+       
+       }//function21
+       let q121=document.getElementById('b21').value;
+       let bpt21=document.getElementById('c21').value;
+       let sp121=document.getElementById('d21').value;
+       let q221=document.getElementById('e21').value;
+       let stoke21=document.getElementById('j21').value;
+       bp121=bpt21/q121;
+       spt21=sp121*q221;
+       profit21=(sp121-bp121)/bp121*100;
+       stoke21=(stoke21*1-q221);
+       document.getElementById("i21").innerHTML=stoke21;
+       document.getElementById("f21").innerHTML=spt21+"frw";
+       document.getElementById("g21").innerHTML=profit21.toFixed(2)+"%";
+       if(profit21>0){
+         document.getElementById("h21").innerHTML="profit"; 
+       }
+       else if(profit21==0){
+         document.getElementById("h21").innerHTML="no loss/profit";
+       }
+       
+       else if(profit21<0){
+        document.getElementById("h21").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h21").innerHTML="no thing"; 
+       
+       }//function22
+       
+       let q122=document.getElementById('b22').value;
+       let bpt22=document.getElementById('c22').value;
+       let sp122=document.getElementById('d22').value;
+       let q222=document.getElementById('e22').value;
+       let stoke22=document.getElementById('j22').value;
+       bp122=bpt22/q122;
+       spt22=sp122*q222;
+       profit22=(sp122-bp122)/bp122*100;
+       stoke22=(stoke22*1-q222);
+       document.getElementById("i22").innerHTML=stoke22;
+       document.getElementById("f22").innerHTML=spt22+"frw";
+       document.getElementById("g22").innerHTML=profit22.toFixed(2)+"%";
+       if(profit22>0){
+         document.getElementById("h22").innerHTML="profit"; 
+       }
+       else if(profit22==0){
+         document.getElementById("h22").innerHTML="no loss/profit";
+       }
+       
+       else if(profit22<0){
+        document.getElementById("h22").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h22").innerHTML="no thing"; 
+       
+       }//function23
+       let q123=document.getElementById('b23').value;
+       let bpt23=document.getElementById('c23').value;
+       let sp123=document.getElementById('d23').value;
+       let q223=document.getElementById('e23').value;
+       let stoke23=document.getElementById('j23').value;
+       bp123=bpt23/q123;
+       spt23=sp123*q223;
+       profit23=(sp123-bp123)/bp123*100;
+       stoke23=(stoke23*1-q223);
+       document.getElementById("i23").innerHTML=stoke23;
+       document.getElementById("f23").innerHTML=spt23+"frw";
+       document.getElementById("g23").innerHTML=profit23.toFixed(2)+"%";
+       if(profit23>0){
+         document.getElementById("h23").innerHTML="profit"; 
+       }
+       else if(profit23==0){
+         document.getElementById("h23").innerHTML="no loss/profit";
+       }
+       
+       else if(profit23<0){
+        document.getElementById("h23").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h23").innerHTML="no thing"; 
+       
+       }//function24
+       
+       let q124=document.getElementById('b24').value;
+       let bpt24=document.getElementById('c24').value;
+       let sp124=document.getElementById('d24').value;
+       let q224=document.getElementById('e24').value;
+       let stoke24=document.getElementById('j24').value;
+       bp124=bpt24/q124;
+       spt24=sp124*q224;
+       profit24=(sp124-bp124)/bp124*100;
+       stoke24=(stoke24*1-q224);
+       document.getElementById("i24").innerHTML=stoke24;
+       document.getElementById("f24").innerHTML=spt24+"frw";
+       document.getElementById("g24").innerHTML=profit24.toFixed(2)+"%";
+       if(profit24>0){
+         document.getElementById("h24").innerHTML="profit"; 
+       }
+       else if(profit24==0){
+         document.getElementById("h24").innerHTML="no loss/profit";
+       }
+       
+       else if(profit24<0){
+        document.getElementById("h24").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h24").innerHTML="no thing"; 
+       
+       }
+       
+       //function25
+       let q125=document.getElementById('b25').value;
+       let bpt25=document.getElementById('c25').value;
+       let sp125=document.getElementById('d25').value;
+       let q225=document.getElementById('e25').value;
+       let stoke25=document.getElementById('j25').value;
+       bp125=bpt25/q125;
+       spt25=sp125*q225;
+       profit25=(sp125-bp125)/bp125*100;
+       stoke25=(stoke25*1-q225);
+       document.getElementById("i25").innerHTML=stoke25;
+       document.getElementById("f25").innerHTML=spt25+"frw";
+       document.getElementById("g25").innerHTML=profit25.toFixed(2)+"%";
+       if(profit25>0){
+         document.getElementById("h25").innerHTML="profit"; 
+       }
+       else if(profit25==0){
+         document.getElementById("h25").innerHTML="no loss/profit";
+       }
+       
+       else if(profit25<0){
+        document.getElementById("h25").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h25").innerHTML="no thing"; 
+       
+       }//function26
+       let q126=document.getElementById('b26').value;
+       let bpt26=document.getElementById('c26').value;
+       let sp126=document.getElementById('d26').value;
+       let q226=document.getElementById('e26').value;
+       let stoke26=document.getElementById('j26').value;
+       bp126=bpt26/q126;
+       spt26=sp126*q226;
+       profit26=(sp126-bp126)/bp126*100;
+       stoke26=(stoke26*1-q226);
+       document.getElementById("i26").innerHTML=stoke26;
+       document.getElementById("f26").innerHTML=spt26+"frw";
+       document.getElementById("g26").innerHTML=profit26.toFixed(2)+"%";
+       if(profit26>0){
+         document.getElementById("h26").innerHTML="profit"; 
+       }
+       else if(profit26==0){
+         document.getElementById("h26").innerHTML="no loss/profit";
+       }
+       
+       else if(profit26<0){
+        document.getElementById("h26").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h26").innerHTML="no thing"; 
+       
+       }
+       
+       //function27
+       let q127=document.getElementById('b27').value;
+       let bpt27=document.getElementById('c27').value;
+       let sp127=document.getElementById('d27').value;
+       let q227=document.getElementById('e27').value;
+       let stoke27=document.getElementById('j27').value;
+       bp127=bpt27/q127;
+       spt27=sp127*q227;
+       profit27=(sp127-bp127)/bp127*100;
+       stoke27=(stoke27*1-q227);
+       document.getElementById("i27").innerHTML=stoke27;
+       document.getElementById("f27").innerHTML=spt27+"frw";
+       document.getElementById("g27").innerHTML=profit27.toFixed(2)+"%";
+       if(profit27>0){
+         document.getElementById("h27").innerHTML="profit"; 
+       }
+       else if(profit27==0){
+         document.getElementById("h27").innerHTML="no loss/profit";
+       }
+       
+       else if(profit27<0){
+        document.getElementById("h27").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h27").innerHTML="no thing"; 
+       
+       }//function28
+       let q128=document.getElementById('b28').value;
+       let bpt28=document.getElementById('c28').value;
+       let sp128=document.getElementById('d28').value;
+       let q228=document.getElementById('e28').value;
+       let stoke28=document.getElementById('j28').value;
+       bp128=bpt28/q128;
+       spt28=sp128*q228;
+       profit28=(sp128-bp128)/bp128*100;
+       stoke28=(stoke28*1-q228);
+       document.getElementById("i28").innerHTML=stoke28;
+       document.getElementById("f28").innerHTML=spt28+"frw";
+       document.getElementById("g28").innerHTML=profit28.toFixed(2)+"%";
+       if(profit28>0){
+         document.getElementById("h28").innerHTML="profit"; 
+       }
+       else if(profit28==0){
+         document.getElementById("h28").innerHTML="no loss/profit";
+       }
+       
+       else if(profit28<0){
+        document.getElementById("h28").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h28").innerHTML="no thing"; 
+       
+       }//function29
+       
+       let q129=document.getElementById('b29').value;
+       let bpt29=document.getElementById('c29').value;
+       let sp129=document.getElementById('d29').value;
+       let q229=document.getElementById('e29').value;
+       let stoke29=document.getElementById('j29').value;
+       bp129=bpt29/q129;
+       spt29=sp129*q229;
+       profit29=(sp129-bp129)/bp129*100;
+       stoke29=(stoke29*1-q229);
+       document.getElementById("i29").innerHTML=stoke29;
+       document.getElementById("f29").innerHTML=spt29+"frw";
+       document.getElementById("g29").innerHTML=profit29.toFixed(2)+"%";
+       if(profit29>0){
+         document.getElementById("h29").innerHTML="profit"; 
+       }
+       else if(profit29==0){
+         document.getElementById("h29").innerHTML="no loss/profit";
+       }
+       
+       else if(profit29<0){
+        document.getElementById("h29").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h29").innerHTML="no thing"; 
+       
+       }//function30
+       
+       let q130=document.getElementById('b30').value;
+       let bpt30=document.getElementById('c30').value;
+       let sp130=document.getElementById('d30').value;
+       let q230=document.getElementById('e30').value;
+       let stoke30=document.getElementById('j30').value;
+       bp130=bpt30/q130;
+       spt30=sp130*q230;
+       profit30=(sp130-bp130)/bp130*100;
+       stoke30=(stoke30*1-q230);
+       document.getElementById("i30").innerHTML=stoke30;
+       document.getElementById("f30").innerHTML=spt30+"frw";
+       document.getElementById("g30").innerHTML=profit30.toFixed(2)+"%";
+       if(profit30>0){
+         document.getElementById("h30").innerHTML="profit"; 
+       }
+       else if(profit30==0){
+         document.getElementById("h30").innerHTML="no loss/profit";
+       }
+       
+       else if(profit30<0){
+        document.getElementById("h30").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h30").innerHTML="no thing"; 
+       
+       }
+       //function 31
+       
+       let q131=document.getElementById('b31').value;
+       let bpt31=document.getElementById('c31').value;
+       let sp131=document.getElementById('d31').value;
+       let q231=document.getElementById('e31').value;
+       let stoke31=document.getElementById('j31').value;
+       bp131=bpt31/q131;
+       spt31=sp131*q231;
+       profit31=(sp131-bp131)/bp131*100;
+       stoke31=(stoke31*1-q231);
+       document.getElementById("i31").innerHTML=stoke31;
+       document.getElementById("f31").innerHTML=spt31+"frw";
+       document.getElementById("g31").innerHTML=profit31.toFixed(2)+"%";
+       if(profit31>0){
+         document.getElementById("h31").innerHTML="profit"; 
+       }
+       else if(profit31==0){
+         document.getElementById("h31").innerHTML="no loss/profit";
+       }
+       
+       else if(profit31<0){
+        document.getElementById("h31").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h31").innerHTML="no thing"; 
+       
+       }
+       //function32
+       let q132=document.getElementById('b32').value;
+       let bpt32=document.getElementById('c32').value;
+       let sp132=document.getElementById('d32').value;
+       let q232=document.getElementById('e32').value;
+       let stoke32=document.getElementById('j32').value;
+       bp132=bpt32/q132;
+       spt32=sp132*q232;
+       profit32=(sp132-bp132)/bp132*100;
+       stoke32=(stoke32*1-q232);
+       document.getElementById("i32").innerHTML=stoke32;
+       document.getElementById("f32").innerHTML=spt32+"frw";
+       document.getElementById("g32").innerHTML=profit32.toFixed(2)+"%";
+       if(profit32>0){
+         document.getElementById("h32").innerHTML="profit"; 
+       }
+       else if(profit32==0){
+         document.getElementById("h32").innerHTML="no loss/profit";
+       }
+       
+       else if(profit32<0){
+        document.getElementById("h32").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h32").innerHTML="no thing"; 
+       
+       }
+       //function33
+       
+       let q133=document.getElementById('b33').value;
+       let bpt133=document.getElementById('c33').value;
+       let sp133=document.getElementById('d33').value;
+       let q233=document.getElementById('e33').value;
+       let stoke33=document.getElementById('j33').value;
+       bp133=bpt133/q133;
+       spt33=sp133*q233;
+       profit33=(sp133-bp133)/bp133*100;
+       stoke33=(stoke33*1-q233);
+       document.getElementById("i33").innerHTML=stoke33;
+       document.getElementById("f33").innerHTML=spt33+"frw";
+       document.getElementById("g33").innerHTML=profit33.toFixed(2)+"%";
+       if(profit33>0){
+         document.getElementById("h33").innerHTML="profit"; 
+       }
+       else if(profit33==0){
+         document.getElementById("h33").innerHTML="no loss/profit";
+       }
+       
+       else if(profit33<0){
+        document.getElementById("h33").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h33").innerHTML="no thing"; 
+       
+       }
+       //function34
+       let q134=document.getElementById('b34').value;
+       let bpt34=document.getElementById('c34').value;
+       let sp134=document.getElementById('d34').value;
+       let q234=document.getElementById('e34').value;
+       let stoke34=document.getElementById('j34').value;
+       bp134=bpt34/q134;
+       spt34=sp134*q234;
+       profit34=(sp134-bp134)/bp134*100;
+       stoke34=(stoke34*1-q234);
+       document.getElementById("i34").innerHTML=stoke34;
+       document.getElementById("f34").innerHTML=spt34+"frw";
+       document.getElementById("g34").innerHTML=profit34.toFixed(2)+"%";
+       if(profit34>0){
+         document.getElementById("h34").innerHTML="profit"; 
+       }
+       else if(profit34==0){
+         document.getElementById("h34").innerHTML="no loss/profit";
+       }
+       
+       else if(profit34<0){
+        document.getElementById("h34").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h34").innerHTML="no thing"; 
+       
+       }
+       //function35
+       
+       let q135=document.getElementById('b35').value;
+       let bpt35=document.getElementById('c35').value;
+       let sp135=document.getElementById('d35').value;
+       let q235=document.getElementById('e35').value;
+       let stoke35=document.getElementById('j35').value;
+       bp135=bpt35/q135;
+       spt35=sp135*q235;
+       profit35=(sp135-bp135)/bp135*100;
+       stoke35=(stoke35*1-q235);
+       document.getElementById("i35").innerHTML=stoke35;
+       document.getElementById("f35").innerHTML=spt35+"frw";
+       document.getElementById("g35").innerHTML=profit35.toFixed(2)+"%";
+       if(profit35>0){
+         document.getElementById("h35").innerHTML="profit"; 
+       }
+       else if(profit35==0){
+         document.getElementById("h35").innerHTML="no loss/profit";
+       }
+       
+       else if(profit35<0){
+        document.getElementById("h35").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h35").innerHTML="no thing"; 
+       
+       }
+       //function36
+       
+       let q136=document.getElementById('b36').value;
+       let bpt36=document.getElementById('c36').value;
+       let sp136=document.getElementById('d36').value;
+       let q236=document.getElementById('e36').value;
+       let stoke36=document.getElementById('j36').value;
+       bp136=bpt36/q136;
+       spt36=sp136*q236;
+       profit36=(sp136-bp136)/bp136*100;
+       stoke36=(stoke36*1-q236);
+       document.getElementById("i36").innerHTML=stoke36;
+       document.getElementById("f36").innerHTML=spt36+"frw";
+       document.getElementById("g36").innerHTML=profit36.toFixed(2)+"%";
+       if(profit36>0){
+         document.getElementById("h36").innerHTML="profit"; 
+       }
+       else if(profit36==0){
+         document.getElementById("h36").innerHTML="no loss/profit";
+       }
+       
+       else if(profit36<0){
+        document.getElementById("h36").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h36").innerHTML="no thing"; 
+       
+       }
+       //function37
+       let q137=document.getElementById('b37').value;
+       let bpt37=document.getElementById('c37').value;
+       let sp137=document.getElementById('d37').value;
+       let q237=document.getElementById('e37').value;
+       let stoke37=document.getElementById('j37').value;
+       bp137=bpt37/q137;
+       spt37=sp137*q237;
+       profit37=(sp137-bp137)/bp137*100;
+       stoke37=(stoke37*1-q237);
+       document.getElementById("i37").innerHTML=stoke37;
+       document.getElementById("f37").innerHTML=spt37+"frw";
+       document.getElementById("g37").innerHTML=profit37.toFixed(2)+"%";
+       if(profit37>0){
+         document.getElementById("h37").innerHTML="profit"; 
+       }
+       else if(profit37==0){
+         document.getElementById("h37").innerHTML="no loss/profit";
+       }
+       
+       else if(profit37<0){
+        document.getElementById("h37").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h37").innerHTML="no thing"; 
+       
+       }
+       //function38
+       
+       let q138=document.getElementById('b38').value;
+       let bpt38=document.getElementById('c38').value;
+       let sp138=document.getElementById('d38').value;
+       let q238=document.getElementById('e38').value;
+       let stoke38=document.getElementById('j38').value;
+       bp138=bpt38/q138;
+       spt38=sp138*q238;
+       profit38=(sp138-bp138)/bp138*100;
+       stoke38=(stoke38*1-q238);
+       document.getElementById("i38").innerHTML=stoke38;
+       document.getElementById("f38").innerHTML=spt38+"frw";
+       document.getElementById("g38").innerHTML=profit38.toFixed(2)+"%";
+       if(profit38>0){
+         document.getElementById("h38").innerHTML="profit"; 
+       }
+       else if(profit38==0){
+         document.getElementById("h38").innerHTML="no loss/profit";
+       }
+       
+       else if(profit38<0){
+        document.getElementById("h38").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h38").innerHTML="no thing"; 
+       
+       }
+       //function39
+       
+       let q139=document.getElementById('b39').value;
+       let bpt39=document.getElementById('c39').value;
+       let sp139=document.getElementById('d39').value;
+       let q239=document.getElementById('e39').value;
+       let stoke39=document.getElementById('j39').value;
+       bp139=bpt39/q139;
+       spt39=sp139*q239;
+       profit39=(sp139-bp139)/bp139*100;
+       stoke39=(stoke39*1-q239);
+       document.getElementById("i39").innerHTML=stoke39;
+       document.getElementById("f39").innerHTML=spt39+"frw";
+       document.getElementById("g39").innerHTML=profit39.toFixed(2)+"%";
+       if(profit39>0){
+         document.getElementById("h39").innerHTML="profit"; 
+       }
+       else if(profit39==0){
+         document.getElementById("h39").innerHTML="no loss/profit";
+       }
+       
+       else if(profit39<0){
+        document.getElementById("h39").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h39").innerHTML="no thing"; 
+       
+       }
+       //function40
+       
+       let q140=document.getElementById('b40').value;
+       let bpt40=document.getElementById('c40').value;
+       let sp140=document.getElementById('d40').value;
+       let q240=document.getElementById('e40').value;
+       let stoke40=document.getElementById('j40').value;
+       bp140=bpt40/q140;
+       spt40=sp140*q240;
+       profit40=(sp140-bp140)/bp140*100;
+       stoke40=(stoke40*1-q240);
+       document.getElementById("i40").innerHTML=stoke40;
+       document.getElementById("f40").innerHTML=spt40+"frw";
+       document.getElementById("g40").innerHTML=profit40.toFixed(2)+"%";
+       if(profit40>0){
+         document.getElementById("h40").innerHTML="profit"; 
+       }
+       else if(profit40==0){
+         document.getElementById("h40").innerHTML="no loss/profit";
+       }
+       
+       else if(profit40<0){
+        document.getElementById("h40").innerHTML="loss"; 
+       
+       }
+       else{
+        document.getElementById("h40").innerHTML="no thing"; 
+       
+       }
+       //total selling price
+       // function 41
+       let totalprice=1*spt+1*spt1+1*spt12+1*spt13+1*spt14+1*spt15+1*spt16+
+       1*spt17+1*spt18+
+       1*spt19+1*spt10+1*spt111+1*spt122+1*spt13+1*spt14+1*spt15+
+       1*spt16+1*spt17+1*spt18+1*spt19+1*spt20+1*spt21+1*spt22+1*spt23+
+       1*spt24+1*spt25
+       +1*spt26+1*spt27+1*spt28+1*spt29+1*spt30+1*spt31+1*spt32+1*spt33+1*spt33+1*spt34
+       +1*spt35+1*spt36+1*spt37+1*spt38+1*spt39+1*spt40;    
+       document.getElementById("f41").innerHTML="Total:"+totalprice+"Frw";
+       }
+       </script>
+        <button id="de" onclick="fabi()" class="datebutton">Date</button>
+        <button id="demo" onclick="fas()" class="printbutton">Print</button>
+        <button onclick="fa()" class="okbutton">Ok</button>
+        <button class="okbutton" style="background-color: bisque;"><a href="">New Sheet(11)</a></button>
+        <button onclick="goBack()" class="okbutton Back">Go back</button>
+        <button onclick="goForward()" class="okbutton forwd">Go forward</button>
+        <div class="arrowgoback Back1">
+      
+        </div>
+        <div class="arrowgoforwd forwd1">
+      
+        </div>
+               <br><br><br><br>
+       <footer class="footercontainer">
+        <div class="email">
+            <h2><u>Information</u></h2>
+            <ul>
+                <li><label>Email</label>:Mugisha@gmail.com</li>
+                <li><label>contact:</label>0790723191</li>
+                <li><label>contact:</label>0781526628</li>
+            </ul>
+        </div>
+        
+        <div class="followus">
+            <h2><u>Follow Us</u></h2>
+            <ul>
+                <li>Twitter</li>
+                <li>Google</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2><u>Our Works</u></h2>
+            <ul>
+                <li>Export & Import</li>
+                <li>Transport product</li>
+                <li>Selling product</li>
+            </ul>
+        </div>
+        
+        <div class="address">
+            <h2><u>Our services</u></h2>
+            <ul>
+                <li>Purchasing product</li>
+                <li>Transport product</li>
+                <li>Selling product</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>

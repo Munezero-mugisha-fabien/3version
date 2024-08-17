@@ -1,0 +1,40 @@
+:root{
+/* color */
+--primary-color:#322232;
+--secondary-color:#F2F2F2;
+}
+.header{
+    background-color: var(--secondary-color);
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.navbar ul{
+list-style: none;
+display: flex;
+gap: 4rem;
+
+}
+.navbar ul a{
+    text-decoration: none;
+    font-family: poppines;
+}
+body{
+    background-color: var(--primary-color);
+}
+*{
+    margin: 0,auto;
+    padding: 0;
+}
+.class1{display: grid;
+    gap: 5rem;
+grid-template-columns: repeat(3,1fr);
+    
+}
+.class2{background-color: red;
+    position: ;
+    transform: rotate(45deg);
+    z-index: ;
+}
